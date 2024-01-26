@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes up {
+            0% {
+                top: 90%;
+            }
+
+            100% {
+                top: 10%;
+            }
+        }
+
+        @keyframes down {
+            0% {
+                top: 10%
+            }
+
+            100% {
+                top: 90%;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: lg;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            background: url('1028030.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bar {
+            top: 90%;
+            left: 7%;
+            width: 60%;
+            height: 80%;
+            padding: .3rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: 20px;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.452);
+            animation-play-state: running;
+            transition: all ease 500ms;
+            backdrop-filter: blur(6px);
+            z-index: 1;
+        }
+
+        .dis2 {
+            top: 2%;
+            left: 7%;
+            width: 20%;
+            height: 4%;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+            background-color: rgba(100, 148, 237, 0.669);
+            
+            transition: all ease 500ms;
+            backdrop-filter: blur(6px);
+        }
+
+        .dis2:hover {
+            height: 18%;
+        }
+
+        .top {
+            width: 95%;
+            height: 11%;
+            display: flex;
+            border-radius: 20px;
+            justify-content: space-evenly;
+
+        }
+
+        .icons {
+            width: 7.2%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            border-radius: 12px;
+            justify-content: center;
+            transition: all ease .2s;
+        }
+
+        .imgs {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .line {
+            width: 98%;
+            height: 1px;
+            top: 8px;
+            position: relative;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+
+        .icons:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        .Folder-container {
+            top: 15%;
+            left: -7.8%;
+            width: 5%;
+            height: 70%;
+            padding: 5px;
+            display: flex;
+     
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.452);
+            backdrop-filter: blur(6px);
+        }
+
+        .files {
+            width: 100%;
+            height: 12%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fol-imgs {
+            width: 95%;
+            height: 90%;
+            transition: all ease .2s;
+        }
+        .fol-imgs:hover
+        {
+            transform: translateX(13px);
+        }
+
+        .f {
+            left: 2px;
+            width: 98%;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .dis2-icons {
+            width: 20%;
+            height: 95%;
+        }
+
+        .dis2-inner {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .dis2-inner span {
+            font-family: sans-serif;
+            font-size: 1.3rem;
+        }
+
+        .icon-contain {
+            width: 13%;
+            height: 100%;
+            padding: 1px;
+            margin: 3px;
+        }
+
+        .icon-contain img {
+
+            width: auto;
+            height: 98%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        .icon-contain img:hover
+        {
+            cursor: pointer;
+        }
+        .time-container
+        {
+            top: 10%;
+            width: 50%;
+            height: 40%;
+            color: rgb(48, 48, 48);
+            display: flex;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+            justify-content: center;
+        }
+        .time
+        {
+            font-family: sans-serif;
+            font-size: 8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="Folder-container">
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+            <div class="files">
+                <img src="icons/macos-folder1.png" class="fol-imgs">
+            </div>
+
+        </div>
+        <div class="time-container">
+            <span class="time">3:45</span>
+            <span style="font-size: 1.3rem;">19 Staurday 2003</span>
+        </div>
+        <div class="bar" id="bar">
+            <div class="top">
+                <div class="icons" id="icons">
+                    <img src="icons/cinema.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/setting.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/discord.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/mail_macos.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/music.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/netflix_macos.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/vscode2.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/terminal_macos.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/unity.png" class="imgs">
+                </div>
+                <div class="icons" id="icons">
+                    <img src="icons/unity.png" class="imgs">
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="dis2">
+            <div class="dis2-inner">
+                <span style="margin: .8rem;">3:45</span>
+                <div class="icon-contain">
+                    <img src="./icons/Ionic-Battery.png" alt="">
+                </div>
+                <div class="icon-contain">
+                    <img src="./icons/Keyboard-icon.png" alt="">
+                </div>
+                <div class="icon-contain">
+                    <img src="./icons/Bluetooth-icon.png" alt="">
+                </div>
+
+                <div class="icon-contain">
+                    <img src="./icons/wi-fi.png" alt="">
+                </div>
+                <div class="icon-contain" style="height: 90%;">
+                    <img src="./icons/Signal.512.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let app_icons = document.getElementById("icons");
+        let bar = document.getElementById('bar');
+        let con = document.getElementById('container');
+        let up = false;
+
+        con.addEventListener("wheel", (event) => {
+            bar.style.top = "10%";
+            bar.style.animationName = 'up';
+            bar.style.animationDuration = '1s';
+        });
+        con.addEventListener("click", (event) => {
+            bar.style.top = "90%";
+            bar.style.animationName = 'down';
+            bar.style.animationDuration = '1s';
+        })
+
+        app_icons.addEventListener("click",()=>{
+            console.log("App Clicked")
+        })
+
+    </script>
+</body>
+
+</html>
